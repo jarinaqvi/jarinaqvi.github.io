@@ -1,19 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Siptter</title>
 	<style type="text/css">
 		*{
-			margin: 0px;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
 		}
 		body{
-			background-color: lightblue;
+			background-color: #fff;
+
+		}
+		.container:before{
+			content: '';
+			position: absolute;
+			width: 2000px;
+			height: 2000px;
+			border-radius: 60%;
+			background: linear-gradient(-45deg, #4481eb, #04befe);
+			top: 20%;
+			right: 35%;
+			transform: translateY(-50%);
 		}
 	</style>
 </head>
 <body>
-
+	<div class="container"></div>
 </body>
 </html>
